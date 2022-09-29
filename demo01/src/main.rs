@@ -1,3 +1,5 @@
+pub mod fib;
+
 use std::fs;
 
 fn main() {
@@ -13,4 +15,5 @@ fn main() {
   fs::write(output, md.as_bytes()).unwrap();
 
   println!("Converting markdown has benn saved in {}", output);
+  fib::main();
 }
